@@ -317,7 +317,7 @@
                 aplicarFiltro();
             });
 
-            db.ref("leituras").limitToLast(10).on("value", (snapshot) => {
+            db.ref("leituras").limitToLast(30).on("value", (snapshot) => {
                 tbody.innerHTML = "";
 
                 if (!snapshot.exists()) {
